@@ -1,0 +1,32 @@
+.slick-prev {
+  background-color: #99beb7;
+  padding: 1%;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  border-radius: 30px;
+  display: flex;
+}
+
+.slick-prev:hover{
+  background-color: #99beb7;
+}
+
+/* Right arrow */
+.slick-next {
+  background-color: #99beb7;
+  padding: 1%;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  border-radius: 30px;
+  display: flex;
+}
+
+.slick-next:hover{
+    background-color: #99beb7;
+  }
+
+h3 {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0 15%;
+}

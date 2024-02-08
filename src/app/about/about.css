@@ -1,0 +1,11 @@
+/* Add this to your component stylesheet or global styles */
+p {
+  cursor: pointer;
+  margin: 5px 15px;
+}
+
+.active {
+  background-color: white;
+  padding: 10px 25px;
+  border-radius: 20px;
+}
