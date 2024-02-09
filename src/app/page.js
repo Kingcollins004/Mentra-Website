@@ -15,7 +15,7 @@ export default function Home() {
     <div>
       <div className="w-[100%] h-[100vh] bg-gradient-to-b from-[#FBEDB1] to-[#FEF7EC]">
         <Header />
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center pt-[5%]">
           <div className="pl-[15%] w-[50%]">
             <Image width={300} src={logo} />
             <h1

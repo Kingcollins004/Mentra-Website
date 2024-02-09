@@ -4,17 +4,21 @@ import JoinMentra from "@/Components/JoinMentra";
 import Image from "next/image";
 import React from "react";
 import checked from "../../../public/Assets/Svgs/circleChecked.svg";
+import { fraunces } from "../fonts";
+import classnames from "classnames";
 
 const page = () => {
   return (
     <div>
       <Header />
-      <div className="">
+      <div >
         <div
           style={{ backgroundImage: "url(/Assets/Images/therapistBg.png)" }}
-          className="text-center h-[75vh] bg-contain pt-[5%] bg-no-repeat"
+          className="text-center h-[75vh] bg-contain pt-[10%] bg-no-repeat"
         >
-          <h1 className="text-[64px] font-bold ">
+          <h1
+            className={classnames(fraunces.className, "text-[64px] font-bold")}
+          >
             Joining Mentra as a <br />
             Therapist
           </h1>

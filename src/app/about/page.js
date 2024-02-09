@@ -5,6 +5,8 @@ import Footer from "@/Components/Footer";
 import JoinMentra from "@/Components/JoinMentra";
 import "./about.css";
 import OurStory from "@/Components/AboutComponents/OurStory";
+import { fraunces } from "../fonts";
+import classnames from "classnames";
 
 const page = () => {
   const [activeLink, setActiveLink] = useState(0);
@@ -15,9 +17,11 @@ const page = () => {
   return (
     <div>
       <Header />
-      <div className="flex flex-col items-center bg-[#FFFDF2] py-[5%]">
+      <div className="flex flex-col items-center bg-[#FFFDF2] py-[9%]">
         <div className="text-center">
-          <h1 className="text-[64px] font-bold ">
+          <h1
+            className={classnames(fraunces.className, "text-[64px] font-bold")}
+          >
             Unveiling the <br /> Heartbeat of Mentra
           </h1>
           <h1 className="text-[22px] mt-[3%]">

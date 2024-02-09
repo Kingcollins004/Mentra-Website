@@ -4,14 +4,22 @@ import Header from "@/Components/Header";
 import JoinMentra from "@/Components/JoinMentra";
 import Image from "next/image";
 import email from "../../../public/Assets/Svgs/email.svg";
-import info from "../../../public/Assets/Svgs/info.svg"
+import info from "../../../public/Assets/Svgs/info.svg";
+import { fraunces } from "../fonts";
+import classnames from "classnames";
+
 const page = () => {
   return (
     <div>
       <Header />
-      <div className="flex px-[15%] justify-between py-[5%] bg-[#FFFDF2]">
+      <div className="flex px-[15%] justify-between py-[10%] bg-[#FFFDF2]">
         <div className="w-[49%]">
-          <h1 className="text-[64px] font-bold text-[#1D1E20]">
+          <h1
+            className={classnames(
+              fraunces.className,
+              "text-[64px] font-bold text-[#1D1E20]"
+            )}
+          >
             We’d love <br /> to hear from you
           </h1>
           <h1 className="text-[18px] font-semibold text-[#616161] mt-[2%] w-[80%]">
