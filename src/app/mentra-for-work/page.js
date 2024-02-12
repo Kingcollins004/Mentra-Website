@@ -14,6 +14,7 @@ import company4 from "../../../public/Assets/Svgs/company4.svg";
 import company5 from "../../../public/Assets/Svgs/company5.svg";
 import { fraunces } from "../fonts";
 import classnames from "classnames";
+import arrowRight from "../../../public/Assets/Svgs/arrowRight.svg";
 
 const page = () => {
   return (
@@ -24,6 +25,9 @@ const page = () => {
           style={{ backgroundImage: "url(/Assets/Images/CreatorBg.png)" }}
           className="text-center h-[75vh] w-[100%] bg-cover pt-[10%] bg-no-repeat"
         >
+          <button className="bg-[none] mt-[2%] text-[#1A6A73] border-[1px] border-[#1A6A73] rounded-[50px] p-[8px] font-semibold">
+            Mentra For Work
+          </button>
           <h1
             className={classnames(fraunces.className, "text-[64px] font-bold")}
           >
@@ -36,9 +40,6 @@ const page = () => {
             employee well-being, creating a positive <br /> and thriving
             workplace environment.
           </h1>
-          <button className="bg-[#1A6A73] mt-[2%] text-[white] rounded-[50px] p-[1%]">
-            Sign up as a therapist
-          </button>
         </div>
 
         <div className="flex justify-center px-[20%] py-[5%] items-center">
@@ -60,9 +61,11 @@ const page = () => {
               enhance employee well-being, contributing to higher satisfaction,
               increased engagement, and a happier, more resilient workforce.
             </h1>
-            <button className="text-white p-[3%] rounded-[30px] bg-[#20232D]">
-              Join the waitlist
-            </button>
+
+            <div className="flex bg-[#20232D] rounded-[50px] px-[5%] py-[4%] mt-[5%] w-[200px]">
+              <button className=" text-[white] ">Join the waitlist</button>
+              <Image width={25} className="ml-[2%]" src={arrowRight} />
+            </div>
           </div>
         </div>
 
@@ -83,9 +86,10 @@ const page = () => {
               programs, empower your organization with tools that make a
               positive impact on employee mental health.
             </h1>
-            <button className="text-white p-[3%] rounded-[30px] bg-[#20232D]">
-              Join the waitlist
-            </button>
+            <div className="flex bg-[#20232D] rounded-[50px] px-[5%] py-[4%] mt-[5%] w-[200px]">
+              <button className=" text-[white] ">Join the waitlist</button>
+              <Image width={25} className="ml-[2%]" src={arrowRight} />
+            </div>
           </div>
 
           <div className="w-[49%] flex justify-start">
@@ -137,9 +141,10 @@ const page = () => {
             enhance employee well-being, contributing to higher satisfaction,
             increased engagement, and a happier, more resilient workforce.
           </h1>
-          <button className="text-white p-[3%] rounded-[30px] bg-[#20232D]">
-            Join the waitlist
-          </button>
+          <div className="flex bg-[#20232D] rounded-[50px] px-[5%] py-[4%] mt-[5%] w-[200px]">
+            <button className=" text-[white] ">Join the waitlist</button>
+            <Image width={25} className="ml-[2%]" src={arrowRight} />
+          </div>
         </div>
       </div>
       <JoinMentra />

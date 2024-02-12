@@ -5,7 +5,11 @@ import logo from "../../public/Assets/Svgs/logoW.svg";
 import Image from "next/image";
 import { fraunces } from "../../src/app/fonts";
 import classnames from "classnames";
-
+import twitter from "../../public/Assets/Svgs/twitter.svg";
+import tiktok from "../../public/Assets/Svgs/tiktok.svg";
+import instagram from "../../public/Assets/Svgs/instagram.svg";
+import globe from "../../public/Assets/Svgs/globe.svg";
+import arrowDown from "../../public/Assets/Svgs/arrowDown.svg";
 const Footer = () => {
   return (
     <div
@@ -49,9 +53,15 @@ const Footer = () => {
             Your pocket-sized wellness buddy. 
           </p>
           <div className="mt-[50%]">
-            <button className="border-[1px] border-[white] rounded-[30px] p-[3%] w-[40%]">
+
+          <div className="border-[1px] border-[white] rounded-[30px] px-[3%] py-[2%] w-[35%] flex item-center justify-between ">
+            <Image width={30} src={globe} />
+            <button className=" ">
               English
             </button>
+            <Image width={30} src={arrowDown} />
+          </div>
+           
           </div>
         </div>
         <div className="w-[20%] flex items-start flex-col">
@@ -67,9 +77,20 @@ const Footer = () => {
         </div>
         <div className="w-[20%] flex items-start flex-col">
           <h1 className="font-bold mb-[7%]">Follow Us</h1>
-          <p className="text-[14px] font-light my-[4%]">Twitter</p>
-          <p className="text-[14px] font-light my-[4%]">Instagram</p>
-          <p className="text-[14px] font-light my-[4%]">TikTok</p>
+          <div className="flex my-[4%] items-center">
+            <Image src={twitter} />
+            <p className="text-[14px] font-light ml-[7%]">Twitter</p>
+          </div>
+
+          <div className="flex my-[4%] items-center">
+            <Image src={instagram} />
+            <p className="text-[14px] font-light ml-[7%]">Instagram</p>
+          </div>
+
+          <div className="flex my-[4%] items-center">
+          <Image src={tiktok} />
+          <p className="text-[14px] font-light ml-[7%]">TikTok</p>
+          </div>
         </div>
       </div>
     </div>

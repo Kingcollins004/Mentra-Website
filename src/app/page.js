@@ -9,6 +9,7 @@ import Testimonials from "@/Utilities/Testimonials";
 import Footer from "@/Components/Footer";
 import { fraunces } from "./fonts";
 import classnames from "classnames";
+import arrowRight from "../../public/Assets/Svgs/arrowRight.svg";
 
 export default function Home() {
   return (
@@ -32,9 +33,13 @@ export default function Home() {
                 Mentra—a revolutionary platform combining cutting-edge AI
                 technology with compassionate human support.
               </p>
-              <button className="bg-[#002C3C] text-[white] rounded-[50px] p-[3%] mt-[5%]">
-                Join the waitlist
-              </button>
+
+              <div className="flex bg-[#1A6A73] rounded-[50px] p-[3%] mt-[5%] w-[28%]">
+                <button className=" text-[white] ">
+                  Join the waitlist
+                </button>
+                <Image width={25} className="ml-[2%]" src={arrowRight} />
+              </div>
             </div>
             <div className="flex px-[3%] py-[3%] w-[70%] bg-[#C7D69F] rounded-[15px] mt-[5%]">
               <Image src={leaf} />

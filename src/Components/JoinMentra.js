@@ -3,6 +3,7 @@ import Image from "next/image";
 import joinMentra from "../../public/Assets/Images/joinMetra.png";
 import { fraunces } from "../app/fonts";
 import classnames from "classnames";
+import arrowRight from "../../public/Assets/Svgs/arrowRight.svg";
 
 const JoinMentra = () => {
   return (
@@ -22,9 +23,10 @@ const JoinMentra = () => {
             opportunity to connect with individuals seeking your guidance on
             their mental well-being journey.{" "}
           </p>
-          <button className="bg-[#1A6A73] mt-[5%] text-[white] rounded-[50px] p-[3%]">
-            Sign up as a therapist
-          </button>
+          <div className="flex bg-[#1A6A73] rounded-[50px] p-[3.5%] mt-[5%] w-[40%]">
+            <button className=" text-[white] ">Sign up for Therapists</button>
+            <Image width={25} className="ml-[2%]" src={arrowRight} />
+          </div>
         </div>
         <div className="w-[50%] flex justify-center">
           <Image src={joinMentra} />

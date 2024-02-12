@@ -6,6 +6,8 @@ import React from "react";
 import checked from "../../../public/Assets/Svgs/circleChecked.svg";
 import { fraunces } from "../fonts";
 import classnames from "classnames";
+import arrowRight from "../../../public/Assets/Svgs/arrowRight.svg";
+
 
 const page = () => {
   return (
