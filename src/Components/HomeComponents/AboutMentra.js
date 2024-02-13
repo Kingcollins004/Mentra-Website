@@ -9,7 +9,7 @@ import privateIcon from "../../../public/Assets/Svgs/private.svg";
 import starIcon from "../../../public/Assets/Svgs/starIcon.svg";
 import clock from "../../../public/Assets/Svgs/clock.svg";
 import person from "../../../public/Assets/Svgs/person.svg";
-import items from "../../../public/Assets/Svgs/items.svg";
+import lock from "../../../public/Assets/Svgs/lock.svg";
 import tag from "../../../public/Assets/Svgs/tag.svg";
 import badge1 from "../../../public/Assets/Images/badge1.png";
 import badge2 from "../../../public/Assets/Images/badge2.png";
@@ -147,7 +147,7 @@ const AboutMentra = () => {
 
             <div className="flex px-[10%] justify-between mt-[3%]">
               <div className="bg-[#C7D69F] rounded-[40px] p-[4%] w-[48%]">
-                <Image src={items} />
+                <Image src={lock} />
                 <h1 className="text-[#002C3C] text-[24px] font-bold mt-[5%]">
                   Anonymous & Secure
                 </h1>

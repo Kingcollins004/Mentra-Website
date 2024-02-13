@@ -6,14 +6,15 @@ import React from "react";
 import checked from "../../../public/Assets/Svgs/circleChecked.svg";
 import { fraunces } from "../fonts";
 import classnames from "classnames";
-import arrowRight from "../../../public/Assets/Svgs/arrowRight.svg";
+// import arrowRight from "../../../public/Assets/Svgs/arrowRight.svg";
+import Link from "next/link";
 
 
 const page = () => {
   return (
     <div>
       <Header />
-      <div >
+      <div>
         <div
           style={{ backgroundImage: "url(/Assets/Images/therapistBg.png)" }}
           className="text-center h-[75vh] bg-contain pt-[10%] bg-no-repeat"
@@ -29,9 +30,11 @@ const page = () => {
             journey of making a meaningful impact in the lives of <br />
             individuals seeking support.
           </h1>
-          <button className="bg-[#1A6A73] mt-[2%] text-[white] rounded-[50px] p-[1%]">
-            Sign up as a therapist
-          </button>
+          <Link href="/signup">
+            <button className="bg-[#1A6A73] mt-[2%] text-[white] rounded-[50px] p-[1%]">
+              Sign up as a therapist
+            </button>
+          </Link>
         </div>
         <div className="text-center bg-[#FFFDF2] py-[5%] px-[15%]">
           <h1 className="text-[32px] font-medium px-[15%]">
