@@ -42,7 +42,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex px-[3%] py-[3%] w-[70%] bg-[#C7D69F] rounded-[15px] mt-[5%]">
-              <Image src={leaf} />
+              <Image width={70} src={leaf} />
               <div className="ml-[3%]">
                 <h1 className="text-[#1A6A73]">Semi-finalist</h1>
                 <p className="text-[12px] text-[#002C3C]">
@@ -51,7 +51,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="">
+          <div>
             <Image width={700} src={heroImg} />
           </div>
         </div>

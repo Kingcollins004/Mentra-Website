@@ -7,6 +7,9 @@ import "./about.css";
 import OurStory from "@/Components/AboutComponents/OurStory";
 import { fraunces } from "../fonts";
 import classnames from "classnames";
+import Mission from "@/Components/AboutComponents/Mission";
+import Vission from "@/Components/AboutComponents/Vission";
+import Team from "@/Components/AboutComponents/Team";
 
 const page = () => {
   const [activeLink, setActiveLink] = useState(0);
@@ -32,7 +35,22 @@ const page = () => {
           </h1>
         </div>
         <div>
-          <div className="flex justify-center items-center mt-[15%] bg-[#C7D69F] rounded-[50px] px-[15px] py-[1.5%]">
+          <div
+            style={
+              activeLink === 0
+                ? { backgroundColor: "#C7D69F" }
+                : activeLink === 1
+                ? { backgroundColor: "#99BEB7" }
+                : activeLink === 2
+                ? { backgroundColor: "#FBEDB1" }
+                : activeLink === 3
+                ? { backgroundColor: "#FAE19D" }
+                : activeLink === 4
+                ? { backgroundColor: "#99BEB7" }
+                : { display: "none" }
+            }
+            className="flex justify-center items-center mt-[15%] rounded-[50px] px-[15px] py-[1.5%]"
+          >
             <p
               className={activeLink === 0 ? "active" : ""}
               onClick={() => handleLinkClick(0)}
@@ -66,8 +84,33 @@ const page = () => {
             </p>
           </div>
         </div>
-        <div className="mt-[3%] bg-[#C7D69F] mx-[15%] rounded-[40px] px-[5%] py-[5%] ">
-          <OurStory />
+        <div
+          style={
+            activeLink === 0
+              ? { backgroundColor: "#C7D69F" }
+              : activeLink === 1
+              ? { backgroundColor: "#99BEB7" }
+              : activeLink === 2
+              ? { backgroundColor: "#FBEDB1" }
+              : activeLink === 3
+              ? { backgroundColor: "#FAE19D" }
+              : activeLink === 4
+              ? { backgroundColor: "#99BEB7" }
+              : { display: "none" }
+          }
+          className="mt-[3%] mx-[15%] rounded-[40px] px-[5%] py-[5%] "
+        >
+          {activeLink === 0 ? (
+            <OurStory />
+          ) : activeLink === 1 ? (
+            <Mission />
+          ) : activeLink === 2 ? (
+            <Vission />
+          ) : activeLink === 3 ? (
+            <Team />
+          ) : activeLink === 4 ? (
+            <OurStory />
+          ) : null}
         </div>
       </div>
 
