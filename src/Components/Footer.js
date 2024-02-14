@@ -27,20 +27,20 @@ const Footer = () => {
           resources.
         </p>
 
-        <div className="flex w-[30%]">
-          <div className="flex items-center mr-[3%] bg-black rounded-[30px] justify-center text-white w-[80%] py-[2.5%]">
+        <div className="flex w-[35%]">
+          <div className="flex items-center mr-[3%] bg-black rounded-[40px] justify-center text-white w-[200px] py-[2%]">
             <Image className="mr-[2%]" width={50} src={appleBtn} />
-            <div>
+            <div className="text-left">
               <h1 className="text-[13px]">Get it on</h1>
-              <p className="text-[16px] font-semibold">App Store</p>
+              <p className="text-[16px] m-0 font-semibold">App Store</p>
             </div>
           </div>
 
-          <div className="flex items-center bg-black rounded-[30px] justify-center text-[white] w-[80%] py-[2.5%]">
+          <div className="flex items-center bg-black rounded-[40px] justify-center text-[white] w-[200px] py-[2%]">
             <Image className="mr-[3%]" width={50} src={googleBtn} />
-            <div>
+            <div className="text-left">
               <h1 className="text-[13px]">Get it on</h1>
-              <p className="text-[16px] font-semibold">App Store</p>
+              <p className="text-[16px] m-0 font-semibold">App Store</p>
             </div>
           </div>
         </div>
@@ -53,15 +53,11 @@ const Footer = () => {
             Your pocket-sized wellness buddy. 
           </p>
           <div className="mt-[50%]">
-
-          <div className="border-[1px] border-[white] rounded-[30px] px-[3%] py-[2%] w-[35%] flex item-center justify-between ">
-            <Image width={30} src={globe} />
-            <button className=" ">
-              English
-            </button>
-            <Image width={30} src={arrowDown} />
-          </div>
-           
+            <div className="border-[1px] border-[white] rounded-[30px] px-[3%] py-[2%] w-[35%] flex item-center justify-between ">
+              <Image width={30} src={globe} />
+              <button className=" ">English</button>
+              <Image width={30} src={arrowDown} />
+            </div>
           </div>
         </div>
         <div className="w-[20%] flex items-start flex-col">
@@ -88,8 +84,8 @@ const Footer = () => {
           </div>
 
           <div className="flex my-[4%] items-center">
-          <Image src={tiktok} />
-          <p className="text-[14px] font-light ml-[7%]">TikTok</p>
+            <Image src={tiktok} />
+            <p className="text-[14px] font-light ml-[7%]">TikTok</p>
           </div>
         </div>
       </div>

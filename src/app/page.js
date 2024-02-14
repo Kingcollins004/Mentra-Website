@@ -17,12 +17,12 @@ export default function Home() {
       <div className="w-[100%] h-[100vh] bg-gradient-to-b from-[#FBEDB1] to-[#FEF7EC]">
         <Header />
         <div className="flex justify-between items-center pt-[5%]">
-          <div className="pl-[15%] w-[50%]">
+          <div className="pl-[15%] w-[50%] pt-[3%]">
             <Image width={300} src={logo} />
             <h1
               className={classnames(
                 fraunces.className,
-                "text-[56px] text-[#002C3C] font-semibold"
+                "text-[56px] text-[#002C3C] font-semibold max-[1500px]:text-[42px]"
               )}
             >
               your mantra for <br /> mental and emotional <br /> wellness
@@ -34,24 +34,25 @@ export default function Home() {
                 technology with compassionate human support.
               </p>
 
-              <div className="flex bg-[#1A6A73] rounded-[50px] p-[3%] mt-[5%] w-[28%]">
-                <button className=" text-[white] ">
+              <div className="flex bg-[#1A6A73] rounded-[50px] p-[3%] mt-[5%] w-fit">
+                <button className=" text-[white] w-[100%]">
                   Join the waitlist
                 </button>
                 <Image width={25} className="ml-[2%]" src={arrowRight} />
               </div>
             </div>
-            <div className="flex px-[3%] py-[3%] w-[70%] bg-[#C7D69F] rounded-[15px] mt-[5%]">
-              <Image width={70} src={leaf} />
-              <div className="ml-[3%]">
-                <h1 className="text-[#1A6A73]">Semi-finalist</h1>
+            <div className="flex px-[3%] py-[3%] w-[65%] bg-[#C7D69F] rounded-[15px] mt-[5%]">
+              <Image className="w-[20%] max-[1500px]:w-[25%]" src={leaf} />
+              <div className="ml-[3%] w-[70%]">
+                <h1 className="text-[#1A6A73] font-semibold">Semi-finalist</h1>
                 <p className="text-[12px] text-[#002C3C]">
                   Oxford and Cambridge Artificial Intelligence Competition 2023
                 </p>
               </div>
             </div>
           </div>
-          <div>
+
+          <div className="w-[50%]">
             <Image width={700} src={heroImg} />
           </div>
         </div>

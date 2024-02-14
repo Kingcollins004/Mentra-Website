@@ -14,10 +14,10 @@ const page = () => {
   return (
     <div>
       <Header />
-      <div>
+      <div className="bg-[#FEFBF0]">
         <div
           style={{ backgroundImage: "url(/Assets/Images/therapistBg.png)" }}
-          className="text-center h-[75vh] bg-contain pt-[10%] bg-no-repeat"
+          className="text-center h-[100%] bg-cover pt-[10%] bg-no-repeat"
         >
           <h1
             className={classnames(fraunces.className, "text-[64px] font-bold")}

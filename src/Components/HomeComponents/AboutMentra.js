@@ -45,7 +45,7 @@ const AboutMentra = () => {
         </div>
 
         <div>
-          <div className="flex justify-between items-center px-[15%] mt-[5%]">
+          <div className="flex justify-between items-center px-[15%] mt-[5%] max-[1500px]:px-[5%] max-[1750px]:px-[10%]">
             <div className="flex px-[1%] py-[1%] rounded-[50px] items-center bg-white shadow-lg">
               <Image src={unique} />
               <p className="ml-[5px]">Unique to you</p>
@@ -72,7 +72,7 @@ const AboutMentra = () => {
             </div>
           </div>
 
-          <div className="flex justify-between items-center px-[12%] mt-[2%]">
+          <div className="flex justify-between items-center px-[12%] mt-[2%]  max-[1500px]:px-[5%] max-[1750px]:px-[10%]">
             <div className="flex px-[1%] py-[1%] rounded-[50px] items-center bg-white shadow-lg">
               <Image src={care} />
               <p className="ml-[5px]">Empowering Self-Care</p>
@@ -107,7 +107,7 @@ const AboutMentra = () => {
               <h1
                 className={classnames(
                   fraunces.className,
-                  "text-[48px] text-[#002C3C] font-semibold py-[2%] w-[80%]"
+                  "text-[48px] text-[#002C3C] font-semibold py-[2%] w-[80%] max-[1500px]:w-[100%]"
                 )}
               >
                 What We Offer
@@ -119,7 +119,7 @@ const AboutMentra = () => {
           </div>
 
           <div className="w-[75%]">
-            <div className="flex px-[10%] justify-between">
+            <div className="flex px-[10%] justify-between max-[1500px]:px-[5%]">
               <div className="bg-[#99BEB7] rounded-[40px] p-[4%] w-[48%]">
                 <Image src={clock} />
                 <h1 className="text-[#002C3C] text-[24px] font-bold mt-[5%]">
@@ -133,7 +133,7 @@ const AboutMentra = () => {
                 </p>
               </div>
 
-              <div className="bg-[#FAE19D] rounded-[40px] p-[4%] w-[48%] h-[350px]">
+              <div className="bg-[#FAE19D] rounded-[40px] p-[4%] w-[48%] h-[360px]">
                 <Image src={tag} />
                 <h1 className="text-[#002C3C] text-[24px] font-bold mt-[5%]">
                   Licensed Therapists on Demand
@@ -145,7 +145,7 @@ const AboutMentra = () => {
               </div>
             </div>
 
-            <div className="flex px-[10%] justify-between mt-[3%]">
+            <div className="flex px-[10%] justify-between mt-[3%] max-[1500px]:px-[5%]">
               <div className="bg-[#C7D69F] rounded-[40px] p-[4%] w-[48%]">
                 <Image src={lock} />
                 <h1 className="text-[#002C3C] text-[24px] font-bold mt-[5%]">
@@ -158,7 +158,7 @@ const AboutMentra = () => {
                 </p>
               </div>
 
-              <div className="bg-[#1A6A73] rounded-[40px] p-[4%] w-[48%] h-[350px] mt-[-5%]">
+              <div className="bg-[#1A6A73] rounded-[40px] p-[4%] w-[48%] h-[380px] mt-[-7%]">
                 <Image src={person} />
                 <h1 className="text-[white] text-[24px] font-bold mt-[5%]">
                   Engaging Wellness Library

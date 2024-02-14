@@ -13,7 +13,7 @@ const JoinMentra = () => {
           <h1
             className={classnames(
               fraunces.className,
-              "text-[45px] text-[#251909] font-bold"
+              "text-[45px] text-[#251909] font-bold max-[1500px]:text-[34px]"
             )}
           >
             Join Mentra's circle of support and be a beacon of positivity! 🌟
@@ -23,8 +23,10 @@ const JoinMentra = () => {
             opportunity to connect with individuals seeking your guidance on
             their mental well-being journey.{" "}
           </p>
-          <div className="flex bg-[#1A6A73] rounded-[50px] p-[3.5%] mt-[5%] w-[40%]">
-            <button className=" text-[white] ">Sign up for Therapists</button>
+          <div className="flex bg-[#1A6A73] rounded-[50px] p-[3.5%] mt-[5%] w-[40%] max-[1850px]:w-fit">
+            <button className=" text-[white] w-[180px]">
+              Sign up for Therapists
+            </button>
             <Image width={25} className="ml-[2%]" src={arrowRight} />
           </div>
         </div>
