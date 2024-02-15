@@ -15,7 +15,7 @@ const Team = () => {
     <div>
       <div className="flex flex-col items-center justify-center text-[#333333]">
         <div>
-          <h1 className={classnames(fraunces.className, "text-[40px] text-center font-bold mb-[3%]")}>
+          <h1 className={classnames(fraunces.className, "text-[40px] text-center font-bold mb-[3%] max-[768px]:text-[24px]")}>
             Our Team
           </h1>
           <h1 className="text-[18px] font-medium mb-[3%] text-center">

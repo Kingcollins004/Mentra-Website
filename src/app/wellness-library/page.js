@@ -7,21 +7,25 @@ import wellnessImg from "../../../public/Assets/Images/wellnessImg.png";
 import { fraunces } from "../fonts";
 import classnames from "classnames";
 
-
 const page = () => {
   return (
     <div>
       <Header />
 
-      <div className="text-center bg-[#FFFDF2] pt-[10%]">
-        <button className="bg-[none] border-[1px] border-[#FFCC63] text-[#FFCC63] text-[12px] mt-[2%] rounded-[50px] px-[15px] py-[7px]">
+      <div className="text-center bg-[#FFFDF2] pt-[10%] max-[768px]:pt-[25%]">
+        <button className="bg-[none] border-[1px] border-[#FFCC63] text-[#FFCC63] text-[12px] mt-[2%] rounded-[50px] px-[15px] py-[7px] max-[768px]:p-[3%]">
           Wellness library
         </button>
-        <h1 className={classnames(fraunces.className, "text-[64px] font-bold")}>
+        <h1
+          className={classnames(
+            fraunces.className,
+            "text-[64px] font-bold max-[768px]:text-[32px] max-[768px]:mt-[5%]"
+          )}
+        >
           Explore Your Wellness <br />
           Library
         </h1>
-        <h1 className="text-[22px] mt-[2%]">
+        <h1 className="text-[22px] mt-[2%] max-[768px]:text-[16px]">
           Discover a curated collection of resources <br /> designed to empower
           and uplift. From guided <br />
           meditations to insightful articles, explore
@@ -31,12 +35,12 @@ const page = () => {
         </h1>
       </div>
 
-      <div className="text-center bg-[#FFFDF2] py-[5%] px-[15%]">
-        <div className="flex flex-wrap justify-center ml-[3%] px-[15%] mt-[2%]">
-          <div className="w-[100%] flex justify-center rounded-[16px]  bg-white">
+      <div className="text-center bg-[#FFFDF2] py-[5%] px-[15%] max-[768px]:px-[5%]">
+        <div className="flex flex-wrap justify-center ml-[3%] px-[15%] mt-[2%] max-[768px]:px-[0%]">
+          <div className="w-[100%] flex justify-center rounded-[16px] bg-white max-[768px]:flex-col">
             <div className="flex items-center">
               <Image
-                className="rounded-s-[16px]"
+                className="rounded-s-[16px] max-[768px]:rounded-[16px] max-[768px]:p-[5%]"
                 width={600}
                 src={wellnessImg}
               />
@@ -53,7 +57,7 @@ const page = () => {
                 Craft a morning routine that sets a positive tone for the day,
                 fostering well-being and productivity.
               </h1>
-              <div className="flex mt-[15%]">
+              <div className="flex mt-[15%] max-[768px]:mt-[5%] max-[768px]:pb-[5%]">
                 <button className="bg-[#F9F5FF] px-[15px] border-[#E9D7FE] border-[1px] rounded-[10px] mr-[3%] text-[#6941C6]">
                   Design
                 </button>
@@ -64,10 +68,10 @@ const page = () => {
             </div>
           </div>
 
-          <div className="w-[100%] flex justify-center rounded-[16px] mt-[3%] bg-white">
+          <div className="w-[100%] flex justify-center rounded-[16px] mt-[3%] bg-white max-[768px]:flex-col max-[768px]:mt-[5%]">
             <div className="flex items-center">
               <Image
-                className="rounded-s-[16px]"
+                className="rounded-s-[16px] max-[768px]:rounded-[16px] max-[768px]:p-[5%]"
                 width={600}
                 src={wellnessImg}
               />
@@ -84,7 +88,7 @@ const page = () => {
                 Craft a morning routine that sets a positive tone for the day,
                 fostering well-being and productivity.
               </h1>
-              <div className="flex mt-[15%]">
+              <div className="flex mt-[15%] max-[768px]:mt-[5%] max-[768px]:pb-[5%]">
                 <button className="bg-[#F9F5FF] px-[15px] border-[#E9D7FE] border-[1px] rounded-[10px] mr-[3%] text-[#6941C6]">
                   Design
                 </button>
@@ -95,10 +99,10 @@ const page = () => {
             </div>
           </div>
 
-          <div className="w-[100%] flex justify-center rounded-[16px] mt-[3%] bg-white">
+          <div className="w-[100%] flex justify-center rounded-[16px] mt-[3%] bg-white max-[768px]:flex-col max-[768px]:mt-[5%]">
             <div className="flex items-center">
               <Image
-                className="rounded-s-[16px]"
+                className="rounded-s-[16px] max-[768px]:rounded-[16px] max-[768px]:p-[5%]"
                 width={600}
                 src={wellnessImg}
               />
@@ -115,7 +119,7 @@ const page = () => {
                 Craft a morning routine that sets a positive tone for the day,
                 fostering well-being and productivity.
               </h1>
-              <div className="flex mt-[15%]">
+              <div className="flex mt-[15%] max-[768px]:mt-[5%] max-[768px]:pb-[5%]">
                 <button className="bg-[#F9F5FF] px-[15px] border-[#E9D7FE] border-[1px] rounded-[10px] mr-[3%] text-[#6941C6]">
                   Design
                 </button>
@@ -126,10 +130,10 @@ const page = () => {
             </div>
           </div>
 
-          <div className="w-[100%] flex justify-center rounded-[16px] mt-[3%] bg-white">
+          <div className="w-[100%] flex justify-center rounded-[16px] mt-[3%] bg-white max-[768px]:flex-col max-[768px]:mt-[5%]">
             <div className="flex items-center">
               <Image
-                className="rounded-s-[16px]"
+                className="rounded-s-[16px] max-[768px]:rounded-[16px] max-[768px]:p-[5%]"
                 width={600}
                 src={wellnessImg}
               />
@@ -146,7 +150,7 @@ const page = () => {
                 Craft a morning routine that sets a positive tone for the day,
                 fostering well-being and productivity.
               </h1>
-              <div className="flex mt-[15%]">
+              <div className="flex mt-[15%] max-[768px]:mt-[5%] max-[768px]:pb-[5%]">
                 <button className="bg-[#F9F5FF] px-[15px] border-[#E9D7FE] border-[1px] rounded-[10px] mr-[3%] text-[#6941C6]">
                   Design
                 </button>

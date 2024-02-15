@@ -7,7 +7,7 @@
   display: flex;
 }
 
-.slick-prev:hover{
+.slick-prev:hover {
   background-color: #99beb7;
 }
 
@@ -21,12 +21,29 @@
   display: flex;
 }
 
-.slick-next:hover{
-    background-color: #99beb7;
-  }
+.slick-next:hover {
+  background-color: #99beb7;
+}
 
 h3 {
   font-size: 28px;
   font-weight: 600;
   margin: 0 15%;
+}
+
+@media screen and (max-width: 480px) {
+  .slick-prev {
+    padding-right: 23px;
+    padding-bottom: 23px;
+  }
+  .slick-next {
+    padding-right: 23px;
+    padding-bottom: 23px;
+  }
+  h3 {
+    margin: 0;
+  }
+  .slick-track {
+    height: 120px;
+  }
 }

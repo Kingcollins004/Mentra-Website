@@ -14,7 +14,7 @@ const page = () => {
   };
 
   return (
-    <div className="h-[100%] flex flex-col justify-between bg-contain bg-no-repeat bg-[#F6F8FA] relative px-[5%] py-[1%] pb-[5%]">
+    <div className="h-[100%] flex flex-col justify-between bg-contain bg-no-repeat bg-[#F6F8FA] relative px-[5%] py-[1%] pb-[5%] max-[768px]:py-[5%] max-[768px]:h-[100vh]">
       <div
         className="absolute top-[50%] left-[50%] -z-1"
         style={{ transform: "translate(-50%, -50%)" }}
@@ -28,33 +28,33 @@ const page = () => {
         <div className="flex justify-center items-center w-[60%]">
           <Image src={logo} />
         </div>
-        <div className="flex w-[20%]">
-          <h1>Already have a therapist account?</h1>
+        <div className="flex w-[20%] max-[768px]:w-[20%] max-[768px]:justify-end">
+          <h1 className="max-[768px]:hidden">Already have a therapist account?</h1>
           <h1>Login</h1>
         </div>
       </div>
       {nextModal ? (
         <SignupFormTwo />
       ) : (
-        <form className="flex flex-col  items-center h-[70vh] bg-white mx-[35%] rounded-[20px] mt-[7%] z-10">
+        <form className="flex flex-col  items-center h-[70vh] bg-white mx-[35%] rounded-[20px] mt-[7%] z-10 max-[768px]:mt-[5%] max-[768px]:mx-[0%] max-[768px]:w-[100%] max-[768px]:h-[80%]">
           <div className="pt-[8%] text-center flex flex-col items-center border-b-[1px] border-[#E2E4E9] w-[90%] pb-[5%]">
             <Image src={profileIcon} />
             <h1 className="text-[24px] font-bold ">Sign Up as a therapist</h1>
             <p>Enter your details to proceed.</p>
           </div>
 
-          <div className="mt-[5%]">
-            <div className="bg-[#F9F7F3] w-[450px] text-[13px] py-[3%] px-[5%] rounded-[30px]">
+          <div className="mt-[5%] max-[768px]:w-[90%]">
+            <div className="bg-[#F9F7F3] w-[450px] text-[13px] py-[3%] px-[5%] rounded-[30px] max-[768px]:w-[100%]">
               <p className="text-[15px] font-semibold text-[#191B1E]">
                 Fullname
               </p>
               <input
-                className="bg-[#F9F7F3] text-[15px] font-semibold w-[100%] h-[30px]"
+                className="bg-[#F9F7F3] text-[15px] font-semibold w-[100%] h-[30px] max-[768px]:text-[14px] max-[768px]:w-[100%]"
                 placeholder="Enter fullname"
               />
             </div>
 
-            <div className="bg-[#F9F7F3] mt-[3%] w-[450px] text-[13px] py-[3%] px-[5%] rounded-[30px]">
+            <div className="bg-[#F9F7F3] mt-[3%] w-[450px] text-[13px] py-[3%] px-[5%] rounded-[30px] max-[768px]:w-[100%]">
               <p className="text-[15px] font-semibold text-[#191B1E]">
                 Mobile Number
               </p>
@@ -67,7 +67,7 @@ const page = () => {
               </div>
             </div>
 
-            <div className="bg-[#F9F7F3] mt-[3%] w-[450px] text-[13px] py-[3%] px-[5%] rounded-[30px]">
+            <div className="bg-[#F9F7F3] mt-[3%] w-[450px] text-[13px] py-[3%] px-[5%] rounded-[30px] max-[768px]:w-[100%]">
               <p className="text-[15px] font-semibold text-[#191B1E]">Gender</p>
               <select
                 className="bg-[#F9F7F3] text-[15px] font-semibold w-[100%] h-[30px]"

@@ -14,16 +14,20 @@ const Testimonials = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 7000,
+    pauseOnHover: true
   };
 
   return (
-    <div className="bg-[#FFFDF2] py-[5%] px-[15%] text-center">
+    <div className="bg-[#FFFDF2] py-[5%] px-[15%] text-center max-[768px]:px-[5%] max-[768px]:m-0">
       <Slider {...settings}>
         <div>
           <h3
             className={classnames(
               caveat.className,
-              "text-[32px] italic font-bold"
+              "text-[32px] italic font-bold max-[768px]:text-[18px]"
             )}
           >
             Honestly one of the best starter kits I have ever used. It’s saved
@@ -35,7 +39,7 @@ const Testimonials = () => {
           <h3
             className={classnames(
               caveat.className,
-              "text-[32px] italic font-bold"
+              "text-[32px] italic font-bold max-[768px]:text-[18px]"
             )}
           >
             "This toolkit exceeded my expectations! As a beginner, it's been a
@@ -47,7 +51,7 @@ const Testimonials = () => {
           <h3
             className={classnames(
               caveat.className,
-              "text-[32px] italic font-bold"
+              "text-[32px] italic font-bold max-[768px]:text-[18px]"
             )}
           >
             "I can't express how much I love this starter kit! It's been a
@@ -60,7 +64,7 @@ const Testimonials = () => {
           <h3
             className={classnames(
               caveat.className,
-              "text-[32px] italic font-bold"
+              "text-[32px] italic font-bold max-[768px]:text-[18px]"
             )}
           >
             "This starter kit is a must-have for anyone starting out in design.
@@ -73,7 +77,7 @@ const Testimonials = () => {
           <h3
             className={classnames(
               caveat.className,
-              "text-[32px] italic font-bold"
+              "text-[32px] italic font-bold max-[768px]:text-[18px]"
             )}
           >
             "An absolute gem for beginners! This starter kit has been a
@@ -86,7 +90,7 @@ const Testimonials = () => {
           <h3
             className={classnames(
               caveat.className,
-              "text-[32px] italic font-bold"
+              "text-[32px] italic font-bold max-[768px]:text-[18px]"
             )}
           >
             "I can't thank this starter kit enough for making my design journey

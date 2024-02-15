@@ -20,21 +20,24 @@ const page = () => {
   return (
     <div>
       <Header />
-      <div className="flex flex-col items-center bg-[#FFFDF2] py-[9%]">
+      <div className="flex flex-col items-center bg-[#FFFDF2] py-[9%] max-[768px]:py-[5%] max-[768px]:pt-[20%]">
         <div className="text-center">
           <h1
-            className={classnames(fraunces.className, "text-[64px] font-bold")}
+            className={classnames(
+              fraunces.className,
+              "text-[64px] font-bold max-[768px]:text-[34px]"
+            )}
           >
             Unveiling the <br /> Heartbeat of Mentra
           </h1>
-          <h1 className="text-[22px] mt-[3%]">
+          <h1 className="text-[22px] mt-[3%] max-[768px]:text-[16px]">
             Journey with us as we share our story, mission, <br />
             and vision, revealing the essence that drives <br />
             Mentra to redefine the landscape of mental <br />
             well-being.
           </h1>
         </div>
-        <div>
+        <div className="max-[768px]:w-[90%]">
           <div
             style={
               activeLink === 0
@@ -49,7 +52,7 @@ const page = () => {
                 ? { backgroundColor: "#99BEB7" }
                 : { display: "none" }
             }
-            className="flex justify-center items-center mt-[15%] rounded-[50px] px-[15px] py-[1.5%]"
+            className="flex justify-center items-center mt-[15%] rounded-[50px] px-[15px] py-[1.5%] max-[768px]:mt-[5%] max-[768px]:px-[0%] max-[768px]:text-[12px] max-[768px]:w-[100%]"
           >
             <p
               className={activeLink === 0 ? "active" : ""}
@@ -98,7 +101,7 @@ const page = () => {
               ? { backgroundColor: "#99BEB7" }
               : { display: "none" }
           }
-          className="mt-[3%] mx-[15%] rounded-[40px] px-[5%] py-[5%] "
+          className="mt-[3%] mx-[15%] rounded-[40px] px-[5%] py-[5%] max-[768px]:mx-[5%] max-[768px]:rounded-[20px]"
         >
           {activeLink === 0 ? (
             <OurStory />
