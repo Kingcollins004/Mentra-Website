@@ -1,7 +1,7 @@
 /* Add this to your component stylesheet or global styles */
 p {
   cursor: pointer;
-  margin: 5px 15px;
+  margin: 0px 15px;
   font-weight: 600;
 }
 

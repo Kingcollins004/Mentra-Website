@@ -39,8 +39,16 @@ export default function Home() {
       <div className="w-[100%] h-[100vh] bg-gradient-to-b from-[#FBEDB1] to-[#FEF7EC] max-[768px]:h-[100%]">
         <Header />
         <div className="flex justify-between items-center pt-[5%] max-[768px]:flex-col max-[768px]:pt-[20%]">
-          <div className="pl-[15%] w-[50%] pt-[3%] max-[768px]:pl-[5%] max-[768px]:w-[100%]">
-            <Image className="max-[768px]:w-[40%]" width={300} src={logo} />
+          <div className="pl-[10%] w-[50%] pt-[3%] max-[768px]:pl-[5%] max-[768px]:w-[100%]">
+            {/* <Image className="max-[768px]:w-[40%]" width={300} src={logo} /> */}
+            <h1
+              className={classnames(
+                fraunces.className,
+                "text-[#1A6A73] text-[66px] font-bold"
+              )}
+            >
+              Mentra
+            </h1>
             <h1
               className={classnames(
                 fraunces.className,
@@ -63,9 +71,9 @@ export default function Home() {
                 <Image width={25} className="ml-[2%]" src={arrowRight} />
               </div>
             </div>
-            <div className="flex px-[3%] py-[3%] w-[65%] bg-[#C7D69F] rounded-[15px] mt-[5%] max-[768px]:w-[75%]">
+            <div className="flex px-[3%] py-[3%] w-[55%] bg-[#C7D69F] rounded-[15px] mt-[5%] max-[768px]:w-[75%] max-[1290px]:w-[60%] max-[1520px]:w-[63%]">
               <Image
-                className="w-[20%] max-[1500px]:w-[25%] max-[768px]:h-[60px]"
+                className="w-[20%] max-[1520px]:w-[20%] max-[768px]:h-[60px]"
                 src={leaf}
               />
               <div className="ml-[3%] w-[70%]">

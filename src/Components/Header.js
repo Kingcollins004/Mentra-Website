@@ -48,7 +48,7 @@ const Header = () => {
     <div className="px-[5%] py-[1.5%] bg-[#FBEDB1] fixed w-[100%] z-[10] max-[768px]:py-[5%]">
       {isSmallScreen ? (
         <div className="flex justify-between items-center">
-          <div className="w-[20%]">
+          <div  onClick={() => handleLinkClick(0)} className="w-[20%]">
             <Link href="/">
               <Image src={logo} />
             </Link>
@@ -60,17 +60,6 @@ const Header = () => {
               <div className="bg-white p-[4%] w-[40%] mt-[10%] ml-[-32%] flex-col flex absolute shadow-lg rounded-[10px]">
                 <h1
                   className="my-[4%]"
-                  onClick={() => handleLinkClick(0)}
-                  style={
-                    activeLink === 0
-                      ? { fontWeight: "700", color: "#1A6A73" }
-                      : { fontWeight: "400" }
-                  }
-                >
-                  <Link href="/about">About</Link>
-                </h1>
-                <h1
-                  className="my-[4%]"
                   onClick={() => handleLinkClick(1)}
                   style={
                     activeLink === 1
@@ -78,7 +67,7 @@ const Header = () => {
                       : { fontWeight: "400" }
                   }
                 >
-                  <Link href="/mentra-for-work">Mentra for Work</Link>
+                  <Link href="/about">About</Link>
                 </h1>
                 <h1
                   className="my-[4%]"
@@ -89,7 +78,7 @@ const Header = () => {
                       : { fontWeight: "400" }
                   }
                 >
-                  <Link href="/for-therapist">For Therapists</Link>
+                  <Link href="/mentra-for-work">Mentra for Work</Link>
                 </h1>
                 <h1
                   className="my-[4%]"
@@ -100,13 +89,24 @@ const Header = () => {
                       : { fontWeight: "400" }
                   }
                 >
-                  <Link href="/wellness-library">Wellness Library</Link>
+                  <Link href="/for-therapist">For Therapists</Link>
                 </h1>
                 <h1
                   className="my-[4%]"
                   onClick={() => handleLinkClick(4)}
                   style={
                     activeLink === 4
+                      ? { fontWeight: "700", color: "#1A6A73" }
+                      : { fontWeight: "400" }
+                  }
+                >
+                  <Link href="/wellness-library">Wellness Library</Link>
+                </h1>
+                <h1
+                  className="my-[4%]"
+                  onClick={() => handleLinkClick(5)}
+                  style={
+                    activeLink === 5
                       ? { fontWeight: "700", color: "#1A6A73" }
                       : { fontWeight: "400" }
                   }
@@ -119,23 +119,12 @@ const Header = () => {
         </div>
       ) : (
         <div className="flex justify-between items-center">
-          <div className="w-[20%]">
+          <div  onClick={() => handleLinkClick(0)} className="w-[20%]">
             <Link href="/">
               <Image src={logo} />
             </Link>
           </div>
-          <div className="flex justify-between w-[50%] px-[3%]">
-            <h1
-              className=""
-              onClick={() => handleLinkClick(0)}
-              style={
-                activeLink === 0
-                  ? { fontWeight: "700", color: "#1A6A73" }
-                  : { fontWeight: "400" }
-              }
-            >
-              <Link href="/about">About</Link>
-            </h1>
+          <div className="flex justify-between w-[50%]">
             <h1
               className=""
               onClick={() => handleLinkClick(1)}
@@ -145,7 +134,7 @@ const Header = () => {
                   : { fontWeight: "400" }
               }
             >
-              <Link href="/mentra-for-work">Mentra for Work</Link>
+              <Link href="/about">About</Link>
             </h1>
             <h1
               className=""
@@ -156,7 +145,7 @@ const Header = () => {
                   : { fontWeight: "400" }
               }
             >
-              <Link href="/for-therapist">For Therapists</Link>
+              <Link href="/mentra-for-work">Mentra for Work</Link>
             </h1>
             <h1
               className=""
@@ -167,7 +156,7 @@ const Header = () => {
                   : { fontWeight: "400" }
               }
             >
-              <Link href="/wellness-library">Wellness Library</Link>
+              <Link href="/for-therapist">For Therapists</Link>
             </h1>
             <h1
               className=""
@@ -178,14 +167,25 @@ const Header = () => {
                   : { fontWeight: "400" }
               }
             >
+              <Link href="/wellness-library">Wellness Library</Link>
+            </h1>
+            <h1
+              className=""
+              onClick={() => handleLinkClick(5)}
+              style={
+                activeLink === 5
+                  ? { fontWeight: "700", color: "#1A6A73" }
+                  : { fontWeight: "400" }
+              }
+            >
               <Link href="/contact">Contact</Link>
             </h1>
           </div>
           <div className="flex justify-end w-[30%]">
-            <button className="ml-[6%] mr-[2%] bg-[#20232D] text-white w-[150px] h-[50px] rounded-[30px] shadow-lg">
+            <button className="ml-[6%] mr-[2%] bg-[#20232D] text-white w-[140px] h-[45px] rounded-[30px] shadow-lg text-[14px]">
               Get the App
             </button>
-            <button className="bg-[#1A6A73] text-white w-[170px] h-[50px] rounded-[30px] shadow-lg">
+            <button className="bg-[#1A6A73] text-white w-[160px] h-[45px] text-[14px] rounded-[30px] shadow-lg">
               Therapists Login
             </button>
           </div>

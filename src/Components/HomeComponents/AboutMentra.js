@@ -45,68 +45,98 @@ const AboutMentra = () => {
         </div>
 
         <div className="max-[768px]:flex max-[768px]:justify-between">
-          <div className="flex justify-between items-center px-[15%] mt-[5%] max-[1500px]:px-[5%] max-[1750px]:px-[10%] max-[768px]:flex-col max-[768px]:px-[0%] max-[768px]:items-start max-[768px]:w-[48%]">
+          <div className="flex justify-between items-center px-[15%] mt-[5%] max-[1520px]:px-[5%] max-[1750px]:px-[10%] max-[768px]:flex-col max-[768px]:px-[0%] max-[768px]:items-start max-[768px]:w-[48%] max-[1390px]:px-[0%]">
             <div className="flex px-[1%] py-[1%] rounded-[50px] items-center bg-white shadow-lg max-[768px]:my-[5%]">
-              <Image className="max-[768px]:w-[25%]" src={unique} />
+              <Image
+                className="max-[768px]:w-[25%] max-[1390px]:w-[20%]"
+                src={unique}
+              />
               <p className="ml-[5px] max-[768px]:text-[14px]">Unique to you</p>
             </div>
 
             <div className="flex px-[1%] py-[1%] rounded-[50px] items-center bg-white shadow-lg max-[768px]:my-[5%]">
-              <Image className="max-[768px]:w-[20%]" src={privateIcon} />
+              <Image
+                className="max-[768px]:w-[20%] max-[1390px]:w-[20%]"
+                src={privateIcon}
+              />
               <p className="ml-[5px] max-[768px]:text-[14px]">
                 Completely Private
               </p>
             </div>
 
             <div className="flex px-[1%] py-[1%] rounded-[50px] items-center bg-white shadow-lg max-[768px]:my-[5%]">
-              <Image className="max-[768px]:w-[25%]" src={free} />
+              <Image
+                className="max-[768px]:w-[25%] max-[1390px]:w-[20%]"
+                src={free}
+              />
               <p className="ml-[5px] max-[768px]:text-[14px]">Judgment Free</p>
             </div>
 
             <div className="flex px-[1%] py-[1%] rounded-[50px] items-center bg-white shadow-lg max-[768px]:my-[5%]">
-              <Image className="max-[768px]:w-[20%]" src={sensitive} />
+              <Image
+                className="max-[768px]:w-[20%] max-[1390px]:w-[20%]"
+                src={sensitive}
+              />
               <p className="ml-[5px] max-[768px]:text-[14px]">
                 Culturally Sensitive
               </p>
             </div>
 
             <div className="flex px-[1%] py-[1%] rounded-[50px] items-center bg-white shadow-lg max-[768px]:my-[5%]">
-              <Image className="max-[768px]:w-[20%]" src={unique} />
+              <Image
+                className="max-[768px]:w-[20%] max-[1390px]:w-[15%]"
+                src={unique}
+              />
               <p className="ml-[5px] max-[768px]:text-[14px]">
                 Understanding and Kind
               </p>
             </div>
           </div>
 
-          <div className="flex justify-between items-center px-[12%] mt-[2%]  max-[1500px]:px-[5%] max-[1750px]:px-[10%] max-[768px]:flex-col max-[768px]:px-[0%] max-[768px]:items-start max-[768px]:w-[48%]">
-            <div className="flex px-[1%] py-[1%] rounded-[50px] items-center bg-white shadow-lg max-[768px]:my-[5%] max-[768px]:my-[5%]">
-              <Image className="max-[768px]:w-[20%]" src={care} />
+          <div className="flex justify-between items-center px-[12%] mt-[2%]  max-[1520px]:px-[5%] max-[1750px]:px-[10%] max-[768px]:flex-col max-[768px]:px-[0%] max-[768px]:items-start max-[768px]:w-[48%] max-[1390px]:px-[0%]">
+            <div className="flex px-[1%] py-[1%] rounded-[50px] items-center bg-white shadow-lg max-[768px]:my-[5%]">
+              <Image
+                className="max-[768px]:w-[20%] max-[1390px]:w-[15%]"
+                src={care}
+              />
               <p className="ml-[5px] max-[768px]:text-[14px]">
                 Empowering Self-Care
               </p>
             </div>
 
             <div className="flex px-[1%] py-[1%] rounded-[50px] items-center bg-white shadow-lg max-[768px]:my-[5%]">
-              <Image className="max-[768px]:w-[20%]" src={care} />
+              <Image
+                className="max-[768px]:w-[20%] max-[1390px]:w-[15%]"
+                src={care}
+              />
               <p className="ml-[5px] max-[768px]:text-[14px]">
                 Unbiased Listening Ear
               </p>
             </div>
 
             <div className="flex px-[1%] py-[1%] rounded-[50px] items-center bg-white shadow-lg max-[768px]:my-[5%]">
-              <Image className="max-[768px]:w-[25%]" src={available} />
+              <Image
+                className="max-[768px]:w-[25%] max-[1390px]:w-[20%]"
+                src={available}
+              />
               <p className="ml-[5px] max-[768px]:text-[14px]">
                 Always Available
               </p>
             </div>
 
             <div className="flex px-[1%] py-[1%] rounded-[50px] items-center bg-white shadow-lg max-[768px]:my-[5%]">
-              <Image className="max-[768px]:w-[25%]" src={companion} />
+              <Image
+                className="max-[768px]:w-[25%] max-[1390px]:w-[20%]"
+                src={companion}
+              />
               <p className="ml-[5px] max-[768px]:text-[14px]">Your Companion</p>
             </div>
 
             <div className="flex px-[1%] py-[1%] rounded-[50px] items-center bg-white shadow-lg max-[768px]:my-[5%]">
-              <Image className="max-[768px]:w-[25%]" src={care} />
+              <Image
+                className="max-[768px]:w-[25%] max-[1390px]:w-[20%]"
+                src={care}
+              />
               <p className="ml-[5px] max-[768px]:text-[14px]">
                 Your Safe Haven
               </p>
@@ -114,7 +144,7 @@ const AboutMentra = () => {
           </div>
         </div>
 
-        <div className="flex justify-between px-[10%] mt-[12%] text-left max-[768px]:flex-col max-[768px]:px-[0%]">
+        <div className="flex justify-between px-[5%] mt-[12%] text-left max-[768px]:flex-col max-[768px]:px-[0%]">
           <div className="w-[25%] max-[768px]:w-[100%]">
             <Image src={starIcon} />
             <div>
@@ -188,7 +218,7 @@ const AboutMentra = () => {
         </div>
       </div>
 
-      <div className="px-[10%] py-[5%] max-[768px]:px-[5%]">
+      <div className="px-[5%] mt-[5%] py-[5%] max-[768px]:px-[5%]">
         <h1
           className={classnames(
             fraunces.className,
@@ -205,20 +235,20 @@ const AboutMentra = () => {
                 <h1 className="text-[18px] font-semibold text-[#1A6A73]">
                   Download, Sign Up, Subscribe and Personalize
                 </h1>
-                <p className="text-[#1A6A73]">
+                <p className="text-[#1A6A73] text-[14px] mt-[2%]">
                   Get started in moments. Tell us a little about yourself to
                   personalize your experience.
                 </p>
               </div>
             </div>
 
-            <div className="border-[#F9F7F3] border-l-[4px] px-[3%] py-[3%]">
+            <div className="border-[#F9F7F3] border-l-[4px] px-[3%] py-[3%] ">
               <Image src={badge2} />
               <div className="mt-[3%]">
-                <h1 className="text-[18px] font-semibold text-[#1A6A73]">
+                <h1 className="text-[18px] font-semibold text-[#002C3C]">
                   Meet Your AI Companion
                 </h1>
-                <p className="text-[#1A6A73]">
+                <p className="text-[#002C3C] text-[14px] mt-[2%]">
                   Chat with your empathetic AI buddy, designed to understand and
                   respond to your emotions.
                 </p>
@@ -228,10 +258,10 @@ const AboutMentra = () => {
             <div className="border-[#F9F7F3] border-l-[4px] px-[3%] py-[3%]">
               <Image src={badge3} />
               <div className="mt-[3%]">
-                <h1 className="text-[18px] font-semibold text-[#1A6A73]">
+                <h1 className="text-[18px] font-semibold text-[#002C3C]">
                   Need professional support? Get matched with a therapist
                 </h1>
-                <p className="text-[#1A6A73]">
+                <p className="text-[#002C3C] text-[14px] mt-[2%]">
                   Our smart match gets you the right therapist. Book sessions
                   that fit your schedule.
                 </p>
@@ -241,10 +271,10 @@ const AboutMentra = () => {
             <div className="border-[#F9F7F3] border-l-[4px] px-[3%] py-[3%]">
               <Image src={badge4} />
               <div className="mt-[3%]">
-                <h1 className="text-[18px] font-semibold text-[#1A6A73]">
+                <h1 className="text-[18px] font-semibold text-[#002C3C]">
                   Evolving with you
                 </h1>
-                <p className="text-[#1A6A73]">
+                <p className="text-[#002C3C] text-[14px] mt-[2%]">
                   Mentra learns and adapts with you. Get tips and activities
                   made just for you.
                 </p>

@@ -25,18 +25,18 @@ const Footer = () => {
         >
           Join the Mentra Community
         </h1>
-        <p className="text-[20px] my-[3%] max-[768px]:text-[16px]">
+        <p className="text-[20px] text-center my-[3%] max-[768px]:text-[16px]">
           Ready to experience the transformative power of Mentra? Download our
           app now and gain instant access to personalized conversations,
           professional therapists, guided journaling, and a wealth of self-care
           resources.
         </p>
 
-        <div className="flex w-[35%] max-[768px]:w-[80%]">
+        <div className="flex justify-center w-[50%] max-[768px]:w-[80%]">
           <div className="flex items-center mr-[3%] bg-black rounded-[40px] justify-center text-white w-[200px] py-[2%]">
             <Image className="mr-[2%]" width={50} src={appleBtn} />
             <div className="text-left">
-              <h1 className="text-[13px]">Get it on</h1>
+              <h1 className="text-[13px]">Download on the</h1>
               <p className="text-[16px] m-0 font-semibold">App Store</p>
             </div>
           </div>
@@ -67,14 +67,24 @@ const Footer = () => {
         </div>
         <div className="w-[20%] flex items-start flex-col max-[768px]:mt-[7%] max-[768px]:w-[100%]">
           <h1 className="font-bold mb-[7%] max-[768px]:mb-[3%]">Solutions</h1>
-          <p className="text-[14px] font-light my-[4%] max-[768px]:my-[1%]">Mentra for work</p>
-          <p className="text-[14px] font-light my-[4%] max-[768px]:my-[1%]">Wellness Library</p>
-          <p className="text-[14px] font-light my-[4%] max-[768px]:my-[1%]">For Therapists</p>
+          <p className="text-[14px] font-light my-[4%] max-[768px]:my-[1%]">
+            Mentra for work
+          </p>
+          <p className="text-[14px] font-light my-[4%] max-[768px]:my-[1%]">
+            Wellness Library
+          </p>
+          <p className="text-[14px] font-light my-[4%] max-[768px]:my-[1%]">
+            For Therapists
+          </p>
         </div>
         <div className="w-[20%] flex items-start flex-col max-[768px]:mt-[7%] max-[768px]:w-[100%]">
           <h1 className="font-bold mb-[7%]">Company</h1>
-          <p className="text-[14px] font-light my-[4%] max-[768px]:my-[1%]">About us</p>
-          <p className="text-[14px] font-light my-[4%] max-[768px]:my-[1%]">Contact us</p>
+          <p className="text-[14px] font-light my-[4%] max-[768px]:my-[1%]">
+            About us
+          </p>
+          <p className="text-[14px] font-light my-[4%] max-[768px]:my-[1%]">
+            Contact us
+          </p>
         </div>
         <div className="w-[20%] flex items-start flex-col max-[768px]:mt-[7%] max-[768px]:w-[100%]">
           <h1 className="font-bold mb-[7%]">Follow Us</h1>
